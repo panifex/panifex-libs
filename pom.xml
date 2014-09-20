@@ -52,6 +52,11 @@
         <url>https://github.com/panifex/panifex-libs</url>
     </scm>
 
+    <properties>
+        <!-- Defines project encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <build>
         <plugins>
             <!-- maven-javadoc-plugin -->
