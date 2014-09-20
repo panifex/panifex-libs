@@ -47,8 +47,8 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:https://github.com/panifex/panifex-libs.git</connection>
-        <developerConnection>scm:git:https://github.com/panifex/panifex-libs.git</developerConnection>
+        <connection>scm:git:git://github.com/panifex/panifex-libs.git</connection>
+        <developerConnection>scm:git:git://github.com/panifex/panifex-libs.git</developerConnection>
         <url>https://github.com/panifex/panifex-libs</url>
     </scm>
 
