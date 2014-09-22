@@ -27,7 +27,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.panifex.lib</groupId>
     <artifactId>libs</artifactId>
-    <name>Panifex Libs</name>
+    <name>Panifex Platform Libs</name>
+    <description>OSGified libraries</description>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -45,6 +46,18 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+    <issueManagement>
+        <url>https://github.com/panifex/panifex-platform/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License, version 2.1</name>
+            <url>http://www.gnu.org/licenses/lgpl-2.1-standalone.html</url>
+        </license>
+    </licenses>
 
     <scm>
         <connection>scm:git:git@github.com:panifex/panifex-libs.git</connection>
