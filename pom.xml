@@ -36,6 +36,15 @@
         <module>poi</module>
     </modules>
 
+    <developers>
+        <developer>
+            <id>mkrizmanic</id>
+            <name>Mario Krizmanic</name>
+            <email>mario.krizmanic@gmail.com</email>
+            <url>https://github.com/mkrizmanic</url>
+        </developer>
+    </developers>
+
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
