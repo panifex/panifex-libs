@@ -34,6 +34,7 @@
 
     <modules>
         <module>poi</module>
+        <module>itest</module>
     </modules>
 
     <developers>
@@ -94,14 +95,34 @@
                             <Bundle-Version>${project.version}</Bundle-Version>
                             <_include>-osgi.bnd</_include>
                         </instructions>
-                    <unpackBundle>true</unpackBundle>
-                </configuration>
+                        <unpackBundle>true</unpackBundle>
+                    </configuration>
+                </plugin>
+                <!-- depends-maven-plugin -->
+                <plugin>
+                    <groupId>org.apache.servicemix.tooling</groupId>
+                    <artifactId>depends-maven-plugin</artifactId>
+                    <version>1.2</version>
+                    <executions>
+                        <execution>
+                            <id>generate-depends-file</id>
+                            <goals>
+                                <goal>generate-depends-file</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
                 <!-- maven-gpg-plugin -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>1.5</version>
+                </plugin>
+                <!-- maven-invoker-plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-invoker-plugin</artifactId>
+                    <version>1.9</version>
                 </plugin>
                 <!-- maven-javadoc-plugin -->
                 <plugin>
@@ -171,6 +192,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Apache Geronimo Dependencies -->
+            <dependency>
+                <groupId>org.apache.geronimo.specs</groupId>
+                <artifactId>geronimo-stax-api_1.2_spec</artifactId>
+                <version>1.1</version>
+            </dependency>
             <!-- Apache POI Dependencies -->
             <dependency>
                 <groupId>org.apache.poi</groupId>
@@ -202,6 +229,25 @@
                 <groupId>org.apache.xmlbeans</groupId>
                 <artifactId>xmlbeans</artifactId>
                 <version>2.3.0</version>
+            </dependency>
+            <!-- Dom4j Depedencies -->
+            <dependency>
+                <groupId>org.apache.servicemix.bundles</groupId>
+                <artifactId>org.apache.servicemix.bundles.dom4j</artifactId>
+                <version>1.6.1_5</version>
+            </dependency>
+            <!-- Panifex Platform Dependencies -->
+            <dependency>
+                <groupId>org.panifex</groupId>
+                <artifactId>panifex-test-support</artifactId>
+                <version>0.2.0-SNAPSHOT</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- Panifex Libs Dependencies -->
+            <dependency>
+                <groupId>org.panifex.lib</groupId>
+                <artifactId>poi</artifactId>
+                <version>0.1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
