@@ -16,24 +16,27 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 Embed-Dependency: \
-    ooxml-schemas;groupId=org.apache.poi;inline=true, \
     poi;groupId=org.apache.poi;inline=true, \
     poi-contrib;groupId=org.apache.poi;inline=true, \
     poi-ooxml;groupId=org.apache.poi;inline=true, \
+    poi-ooxml-schemas;groupId=org.apache.poi;inline=true, \
     poi-scratchpad;groupId=org.apache.poi; inline=true, \
     xmlbeans;groupId=org.apache.xmlbeans; inline=true
 
 Export-Package: \
-    org.apache.poi.hssf.usermodel;version="3.9", \
-    org.apache.poi.openxml4j.exceptions;version="3.9", \
-    org.apache.poi.ss.usermodel;version="3.9", \
-    org.apache.poi.xssf.usermodel;version="3.9"
+    org.apache.poi.hssf.usermodel;version="3.17", \
+    org.apache.poi.openxml4j.exceptions;version="3.17", \
+    org.apache.poi.ss.usermodel;version="3.17", \
+    org.apache.poi.xssf.usermodel;version="3.17"
 
 Import-Package: \
     javax.xml, \
     javax.xml.namespace, \
+    javax.xml.parsers, \
     javax.xml.stream, \
     com.sun.*;resolution:=optional, \
+    org.apache.commons.collections4;version="[4.0,5.0)", \
+    org.apache.commons.collections4.multimap;version="[4.0,5.0)", \
     org.apache.commons.logging;version="[1.1,2.0)", \
     org.dom4j;version="[1.6,2.0)", \
     org.dom4j.io;version="[1.6,2.0)", \
