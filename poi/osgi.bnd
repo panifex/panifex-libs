@@ -27,6 +27,7 @@ Export-Package: \
     org.apache.poi.hssf.usermodel;version="3.17", \
     org.apache.poi.openxml4j.exceptions;version="3.17", \
     org.apache.poi.ss.usermodel;version="3.17", \
+    org.apache.poi.ss.util;version="3.17", \
     org.apache.poi.xssf.usermodel;version="3.17"
 
 Import-Package: \
